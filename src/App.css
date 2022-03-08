@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+.card-grid-view {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    min-width: 400px;
+    width: 450px;
+    border-radius: 15px;
+    color: #333;
+    margin: 10px;
+    cursor: pointer;
+
+    transition: all 0.2s ease-out;
+    border: 1px solid #ddd;
+  }
+  .card-body:hover {
+    box-shadow: 0 0 4em 0px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  .card-body:active {
+    transform: scale(1.01) translateY(0.2rem);
+  }
+
+  .card-body img {
+    position: relative;
+    top: -25%;
+    width: 100%;
+  }
+
+  .card-body .card-img {
+  width: 450px;
+  height: 250px;
+  overflow: hidden;
+  }
+
+  .card-content {
+    padding: 0.8em;
+    font-family: 'Georgia';
+    width: 400px;
+  }
+
+.card-content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.ui-button {margin: 5px 10px;}
+.ui-button.clicked {color: #e57373}
